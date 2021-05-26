@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+
+nav img {
+    width: 100%;
+}
+
+.project {
+    width: 30rem;
+}
+
