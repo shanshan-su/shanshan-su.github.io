@@ -13,6 +13,6 @@ $('#weather-project').click(() => {
 });
 
 $('#vet-connect').click(()  => {
-    window.location = 'https://veteran-codeathon-marco.github.io/';
+    window.location = 'https://github.com/Veteran-Codeathon-Marco/front-end-vet-code';
 });
 

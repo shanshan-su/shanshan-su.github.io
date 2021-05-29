@@ -12,7 +12,13 @@ nav img {
 }
 
 
+.project:hover {
+    transform: scale(1.2);
+}
 
+.skill {
+    border-radius: 400px;
+}
 
 /* Extra small devices (phones and pocket devices, 576 and up) */
 @media screen and (min-width:360px) {
