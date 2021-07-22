@@ -17,7 +17,12 @@ nav img {
 }
 
 .skill {
+    width: 5rem;
     border-radius: 400px;
+}
+
+.skill-spring {
+    width: 5rem;
 }
 
 /* Extra small devices (phones and pocket devices, 576 and up) */
