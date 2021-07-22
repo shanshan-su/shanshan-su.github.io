@@ -6,23 +6,26 @@ body {
     width: 100%;
 }
 
-
 nav img {
     width: 100%;
 }
-
 
 .project:hover {
     transform: scale(1.2);
 }
 
+
+.list-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .skill {
-    width: 5rem;
+    width: 3rem;
     border-radius: 400px;
 }
 
 .skill-spring {
-    width: 5rem;
+    width: 3rem;
 }
 
 /* Extra small devices (phones and pocket devices, 576 and up) */

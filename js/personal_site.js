@@ -1,9 +1,5 @@
 "use strict";
 
-$('#pizza').click(() => {
-    window.location = ''
-});
-
 $('#coffee').click(() => {
     window.location = 'https://shan-mar-codeup.github.io/';
 });
@@ -16,3 +12,6 @@ $('#vet-connect').click(()  => {
     window.location = 'https://github.com/Veteran-Codeathon-Marco/front-end-vet-code';
 });
 
+$('#realTrail').click(() => {
+    window.location = 'https://realtrail.quest/';
+});
