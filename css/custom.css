@@ -4,17 +4,25 @@
 
 body {
     width: 100%;
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
 }
 
-nav img {
-    width: 100%;
+a {
+    text-decoration: none;
 }
 
-.project:hover {
-    transform: scale(1.2);
+/* --------------------- navbar --------------------- */
+.navbar {
+    padding: 0;
+    border-bottom: 1px solid #8991b3;
+}
+/* --------------------- about me --------------------- */
+#myInfo {
+    margin-top: 1rem;
 }
 
-
+/* --------------------- skills --------------------- */
 .list-group {
     flex-direction: row;
     flex-wrap: wrap;
@@ -26,6 +34,46 @@ nav img {
 
 .skill-spring {
     width: 3rem;
+}
+
+/* --------------------- projects --------------------- */
+h2 {
+    font-size: 3.5vw;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+img#aboutMe {
+    width: 100%;
+}
+
+.project:hover {
+    transform: scale(1.2);
+}
+
+/* --------------------- contact me --------------------- */
+.contact {
+
+}
+.contact > div {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.contact a:link {
+    color: #ff8e6b;
+}
+.contact a:hover {
+    color: red;
+}
+.contact a:active {
+    color: darkred;
+}
+.contact a:visited {
+    color: #8991b3;
+}
+.contact a > i {
+    font-size: 2.5rem;
 }
 
 /* Extra small devices (phones and pocket devices, 576 and up) */
@@ -47,3 +95,14 @@ nav img {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width:1200px) { /* ... */ }
+
+/* --------------------- footer --------------------- */
+footer {
+    margin-top: 3rem;
+    padding: .5rem 0;
+    background-color: #dee4ff;
+}
+footer p {
+    text-align: center;
+    margin: 0;
+}

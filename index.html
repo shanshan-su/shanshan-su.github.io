@@ -3,45 +3,52 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
-
-    <title>Shanshan-Su-personal-website</title>
+    <title>Shanshan Su</title>
 </head>
 <body>
-<nav class="mb-5">
-    <div><img src="img/personal_info.png" alt="personal_info_photo"></div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Shanshan Su</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutMe">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contactMe">Contact Me</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
-<main class="container">
-    <h2>ABOUT ME</h2>
-    <div>
-        <p>Hello everyone! My name is Shanshan Su. I'm looking for full stack developer or Java developer position.</p>
-    </div>
-    <h2>SKILLS</h2>
-    <ul class="list-group">
-        <li class="list-group-item"><img class="skill" src="img/html.jpeg" alt="html-icon">HTML</li>
-        <li class="list-group-item"><img class="skill" src="img/css-icon.jpg" alt="css-icon">CSS</li>
-        <li class="list-group-item"><img class="skill" src="img/bootstrap.png" alt="bootstrap-icon">Bootstrap</li>
-        <li class="list-group-item"><img class="skill" src="img/javascript.jpg" alt="javascript-icon">JavaScript</li>
-        <li class="list-group-item"><img class="skill" src="img/jquery.png" alt="jquery-icon">jQuery</li>
-        <li class="list-group-item"><img class="skill" src="img/java.jpg" alt="java-icon">Java</li>
-        <li class="list-group-item"><img class="skill-spring" src="img/spring.jpg" alt="">Spring</li>
-        <li class="list-group-item"><img class="skill" src="img/mysql.jpg" alt="mysql-icon">MySQL</li>
-        <li class="list-group-item"><img class="skill" src="img/git.jpg" alt="git-icon">Git</li>
-        <li class="list-group-item"><img class="skill" src="img/photoshop.jpg" alt="photoshop-icon">Adobe Photoshop</li>
-    </ul>
+<div><img src="img/shanshan_su_banner.png" alt="Shanshan Su's banner" id="aboutMe"></div>
 
-    <h2 class="mt-3">MY PROJECTS</h2>
+<main class="container">
+    <p id="myInfo">Hello everyone! My name is Shanshan Su. I'm looking for full stack developer or Java developer position.</p>
+
+    <h2 id="projects">MY PROJECTS</h2>
     <div class="row">
         <div class="col-md-6 mt-5 mb-5">
-            <img src="img/coffee_project.jpg" alt="coffee_project_photo" class="project" id="coffee">
-            <p></p>
+            <a href="https://shan-mar-codeup.github.io/">
+                <img src="img/coffee_project.jpg" alt="coffee_project_photo" class="project" id="coffee">
+                <p></p>
+            </a>
         </div>
         <div class="col-md-6 mt-5 mb-5">
             <img src="img/weather_map_project.jpg" alt="Weather Map Project" class="project" id="weather-project">
-        <p>Solo application displaying a 5-day weather forecast.</p>
+            <p>Solo application displaying a 5-day weather forecast.</p>
         </div>
         <div class="col-md-6 mt-5 mb-5">
             <img src="img/" alt="">
@@ -60,15 +67,58 @@
         </div>
     </div>
 
-    <h2>CONTACT ME</h2>
-    <div>
-        <i class="fa fa-github"></i>
-
+    <div class="contact">
+        <div>
+            <h2>SKILLS</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><img class="skill" src="img/html.jpeg" alt="html-icon">HTML</li>
+                <li class="list-group-item"><img class="skill" src="img/css-icon.jpg" alt="css-icon">CSS</li>
+                <li class="list-group-item"><img class="skill" src="img/bootstrap.png" alt="bootstrap-icon">Bootstrap</li>
+                <li class="list-group-item"><img class="skill" src="img/javascript.jpg" alt="javascript-icon">JavaScript</li>
+                <li class="list-group-item"><img class="skill" src="img/jquery.png" alt="jquery-icon">jQuery</li>
+                <li class="list-group-item"><img class="skill" src="img/java.jpg" alt="java-icon">Java</li>
+                <li class="list-group-item"><img class="skill-spring" src="img/spring.jpg" alt="">Spring</li>
+                <li class="list-group-item"><img class="skill" src="img/mysql.jpg" alt="mysql-icon">MySQL</li>
+                <li class="list-group-item"><img class="skill" src="img/git.jpg" alt="git-icon">Git</li>
+                <li class="list-group-item"><img class="skill" src="img/photoshop.jpg" alt="photoshop-icon">Adobe Photoshop</li>
+            </ul>
+        </div>
+        <div>
+            <h2 id="contactMe">CONTACT ME</h2>
+            <div>
+                <a href="https://github.com/shanshan-su">
+                    <i class="fa fa-github"></i>
+                    <br>
+                    View all my code
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/shanshan-su-wathen/">
+                    <i class="fa fa-linkedin"></i>
+                    <br>
+                    Connect with me
+                </a>
+            </div>
+            <div>
+                <a href="mailto:shanshansu36@gmail.com">
+                    <i class="fa fa-envelope"></i>
+                    <br>
+                    Send me an email
+                </a>
+            </div>
+            <div>
+                <a href="https://docs.google.com/document/d/19wIkuaLIekmdwwtWkcM1Ubndf6_pjqD0ZQMSzPyWyMA/edit?usp=sharing">
+                    <i class="fa fa-file-o"></i>
+                    <br>
+                    More details about me
+                </a>
+            </div>
+        </div>
     </div>
 </main>
 
 <footer>
-    <p class="align-center"> &copy; 2021 Shanshan Su, All Rights Reserved</p>
+    <p> &copy; 2021 Shanshan Su, All Rights Reserved</p>
 </footer>
 
 

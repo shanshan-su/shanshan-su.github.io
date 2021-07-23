@@ -1,8 +1,8 @@
 "use strict";
 
-$('#coffee').click(() => {
-    window.location = 'https://shan-mar-codeup.github.io/';
-});
+// $('#coffee').click(() => {
+//     window.location = 'https://shan-mar-codeup.github.io/';
+// });
 
 $('#weather-project').click(() => {
     window.location = 'https://shanshan-su.github.io/weather-project/';
