@@ -5,7 +5,7 @@
 body {
     width: 100%;
     font-family: 'Merriweather', serif;
-    font-size: 1.5rem;
+    font-size: 4vw;
 }
 
 a {
@@ -38,10 +38,18 @@ a {
 
 /* --------------------- projects --------------------- */
 h2 {
-    font-size: 3.5vw;
+    font-size: 10vw;
     font-family: 'Fira Sans', sans-serif;
     text-align: center;
     margin-top: 4rem;
+}
+
+.card {
+    border: 0;
+}
+
+.project {
+    width: 80vw;
 }
 
 img#aboutMe {
@@ -52,14 +60,43 @@ img#aboutMe {
     transform: scale(1.2);
 }
 
-/* --------------------- contact me --------------------- */
-.contact {
-
+.card-body {
+    margin-top: 1rem;
 }
-.contact > div {
+
+/* --------------------- contact me --------------------- */
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    background-image: url("../img/Moody_Mountains.gif");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contacts > div:nth-child(1) {
+    width: 85%;
+    margin: 4rem auto 0;
+}
+.contacts > div:nth-child(1) > img {
+    width: 100%;
+}
+
+.contacts > div:nth-child(2) {
     margin-bottom: 1.5rem;
     text-align: center;
 }
+
+.contact {
+    padding-top: 2rem;
+}
+
+.contacts .contact:nth-child(5) {
+    margin-bottom: 4rem;
+}
+
 .contact a:link {
     color: #ff8e6b;
 }
@@ -70,39 +107,79 @@ img#aboutMe {
     color: darkred;
 }
 .contact a:visited {
-    color: #8991b3;
+    color: #2d1a7a;
+}
+.contact a {
+    font-size: 4.25vw;
 }
 .contact a > i {
-    font-size: 2.5rem;
+    font-size: 4.25vw;
 }
 
-/* Extra small devices (phones and pocket devices, 576 and up) */
-@media screen and (min-width:360px) {
-    .project {
-        width: 330px;
-    }
+/* --------------------- footer --------------------- */
+footer {
+    padding: 1rem 0;
+    background-color: #dee4ff;
+}
+footer p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media screen and (min-width:768px) { /* ... */ }
+@media screen and (min-width:768px) {
+    body {
+        font-size: 2vw;
+    }
+    h2 {
+        font-size: 6vw;
+    }
+    .project {
+        width: 35vw;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width:992px) {
+    body {
+        font-size: 1.5vw;
+    }
+    h2  {
+        font-size: 4vw;
+    }
+    #contactMe {
+        margin-top: 0;
+    }
     .project {
-        width: 30rem;
+        width: 31rem;
+    }
+
+    .contacts {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 34rem;
+    }
+    .contacts > div:nth-child(1) {
+        width: 45%;
+        margin: 0;
+    }
+
+    .contact a {
+        font-size: 2vw;
+    }
+    .contacts .contact:nth-child(5) {
+        margin-bottom: 0;
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width:1200px) { /* ... */ }
-
-/* --------------------- footer --------------------- */
-footer {
-    margin-top: 3rem;
-    padding: .5rem 0;
-    background-color: #dee4ff;
-}
-footer p {
-    text-align: center;
-    margin: 0;
+@media screen and (min-width:1200px) {
+    body {
+        font-size: 1.25vw;
+    }
+    .contact a {
+        font-size: 1.75vw;
+    }
 }
